@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title> on 0x42 </title>
+      <title>Swift 2 on 0x42 </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://jamescarroll.xyz/</link>
+    <link>http://jamescarroll.xyz/tags/swift-2/</link>
     <language>en-us</language>
     
     
@@ -16,15 +16,6 @@
       
       <guid>http://jamescarroll.xyz/post/secRandomCopyBytesExample/</guid>
       <description>Apple has provided a function called SecRandomCopyBytes() inside their Security framework that allows us to create an array of cryptographically secure random bytes. There are other ways to generate random data on iOS and OS X, most notably, arc4random() but this has a few problem: (1) arc4random() can only generate, at most, a 32 bit integer, (2) Apple&amp;rsquo;s arc4random() isn&amp;rsquo;t secure because arc4random() relies on an underlining stream cipher to achieve secure random data; Apple&amp;rsquo;s implementation uses RC4, which is now considered broken.</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>http://jamescarroll.xyz/about/</link>
-      <pubDate>Tue, 08 Sep 2015 19:25:27 EDT</pubDate>
-      
-      <guid>http://jamescarroll.xyz/about/</guid>
-      <description>I&amp;rsquo;m James Carroll and I&amp;rsquo;m a mobile dev in Florida. My favorite language is Swift and I love working with crypto.</description>
     </item>
     
   </channel>

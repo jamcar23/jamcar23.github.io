@@ -15,7 +15,7 @@
       <pubDate>Tue, 08 Sep 2015 19:29:49 EDT</pubDate>
       
       <guid>http://jamescarroll.xyz/post/secRandomCopyBytesExample/</guid>
-      <description>Apple has provided a function called SecRandomCopyBytes() inside their Security framework that allows us to create an array of cryptographically secure random bytes. There are other ways to generate random data on iOS and OS X, most notably, arc4random() but this has a problem: Apple&amp;rsquo;s arc4random() isn&amp;rsquo;t secure because arc4random() relies on an underlining stream cipher to achieve secure random data; Apple&amp;rsquo;s implementation uses RC4, which is now considered broken. SecRandomCopyBytes uses CTR_DRBG which is still secure.</description>
+      <description>Apple has provided a function called SecRandomCopyBytes() inside their Security framework that allows us to create an array of cryptographically secure random bytes. There are other ways to generate random data on iOS and OS X, most notably, arc4random() but this has a few problem: (1) arc4random() can only generate, at most, a 32 bit integer, (2) Apple&amp;rsquo;s arc4random() isn&amp;rsquo;t secure because arc4random() relies on an underlining stream cipher to achieve secure random data; Apple&amp;rsquo;s implementation uses RC4, which is now considered broken.</description>
     </item>
     
   </channel>
