@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Crypto on 0x42 </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://jamescarroll.xyz/tags/crypto/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Tue, 08 Sep 2015 19:29:49 EDT</updated>
+    
+    <item>
+      <title>Safely Generating Cryptographically Secure Random Numbers With Swift</title>
+      <link>http://jamescarroll.xyz/post/secRandomCopyBytesExample/</link>
+      <pubDate>Tue, 08 Sep 2015 19:29:49 EDT</pubDate>
+      
+      <guid>http://jamescarroll.xyz/post/secRandomCopyBytesExample/</guid>
+      <description>Apple has provided a function called SecRandomCopyBytes() inside their Security framework that allows us to create an array of cryptographically secure random bytes. There are other ways to generate random data on iOS and OS X, most notably, arc4random() but this has a problem: Apple&amp;rsquo;s arc4random() isn&amp;rsquo;t secure because arc4random() relies on an underlining stream cipher to achieve secure random data; Apple&amp;rsquo;s implementation uses RC4, which is now considered broken. SecRandomCopyBytes uses CTR_DRBG which is still secure.</description>
+    </item>
+    
+  </channel>
+</rss>
+
