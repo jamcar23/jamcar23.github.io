@@ -135,7 +135,7 @@ SecRandomCopyBytes(kSecRandomDefault, bytesCount, &amp;randomBytes)
 randomNum = randomBytes.map({String(format: &quot;%02hhx&quot;, $0)}).joinWithSeparator(&quot;&quot;)
 </code></pre>
 
-<p>Here we&rsquo;re using a string to hold a hexadecimal representation of a 256 bit number. Instead of using <code>NSData()</code> we turn <code>randomBytes</code> into an array of hexadecimal strings. We use the <a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/Strings/Articles/formatSpecifiers.html">string formatter</a> <code>&quot;%02hhx&quot;</code> to turn our byte (denoted <code>$0</code>) into a hex representation. Lastly, we join the array of strings into a single string using <code>.joinWithSeparator()</code> Awesome! Now we know how to generate integers and hexadecimal strings.</p>
+<p>Here we&rsquo;re using a string to hold a hexadecimal representation of a 256 bit number. Instead of using <code>NSData()</code> we turn <code>randomBytes</code> into an array of hexadecimal strings. We use the <a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/Strings/Articles/formatSpecifiers.html">string formatter</a> <code>&quot;%02hhx&quot;</code> to turn our byte (denoted <code>$0</code>) into a hex representation. Lastly, we join the array of strings into a single string using <code>.joinWithSeparator()</code> Awesome! Now we know how to generate cyrptographically secure random integers and hexadecimal strings.</p>
 
 <h2 id="wrapping-up:13e768278039e1819a22e060a3b8fd1b">Wrapping Up</h2>
 
@@ -145,7 +145,7 @@ randomNum = randomBytes.map({String(format: &quot;%02hhx&quot;, $0)}).joinWithSe
 
 <p><em>Notes:</em></p>
 
-<p>*This works in Swift 1.2 but some of the other syntax has changed in Swift 2, example: <code>String.join([String])</code> has become <code>[String].joinWithSeparator(&quot;&quot;)</code>.</p>
+<p>*The <code>SecRandomCopyBytes()</code> call works the same way in  Swift 1.2 but some of the other syntax has changed in Swift 2, example: <code>String.join([String])</code> has become <code>[String].joinWithSeparator(&quot;&quot;)</code>.</p>
 
       </article>
 
